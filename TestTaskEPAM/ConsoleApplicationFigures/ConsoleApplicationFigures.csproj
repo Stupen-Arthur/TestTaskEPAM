@@ -37,6 +37,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConsoleApplicationClass.cs" />
+    <Compile Include="ConsoleMenu.cs" />
+    <Compile Include="FigureInterface.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FigureLibrary\FigureLibrary.csproj">

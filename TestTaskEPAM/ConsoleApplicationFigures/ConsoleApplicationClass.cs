@@ -1,5 +1,5 @@
 ﻿using System;
-using FigureLibrary;
+using System.Collections.Generic;
 
 namespace ConsoleApplicationFigures
 {
@@ -7,23 +7,17 @@ namespace ConsoleApplicationFigures
     {
         private static void Main()
         {
-            Point[] points = new Point[4];
-
-            for (int index = 0; index < points.Length; index++)
+            FigureInterface figureInterface = new FigureInterface();
+            ConsoleMenu consoleMenu = new ConsoleMenu();
+            
+            do
             {
-                double x = Convert.ToDouble(Console.ReadLine());
-                double y = Convert.ToDouble(Console.ReadLine());
-                points[index] = new Point(x,y);
-            }
+                consoleMenu.ShowGlobalMenu();
+                consoleMenu.Choice = Convert.ToInt32(Console.ReadLine());
+                consoleMenu.UpdateGlobalMenu();
+            } 
+            while (consoleMenu.Choice != 0);
 
-            Square square = new Square(points);
-
-            Console.WriteLine();
-
-            Console.WriteLine(square.Area);
-            Console.WriteLine(square.Perimeter);
-
-            Console.ReadKey();
-;        }
+        }
     }
 }

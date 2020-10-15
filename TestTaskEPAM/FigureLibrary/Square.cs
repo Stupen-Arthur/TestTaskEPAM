@@ -7,7 +7,7 @@ namespace FigureLibrary
         /// <summary>
         /// The sides of the square.
         /// </summary>
-        private double[] _side = new double[4];
+        private readonly double[] _side = new double[4];
 
         /// <summary>
         /// Constructor for the figure - square.
@@ -21,12 +21,15 @@ namespace FigureLibrary
             }
             else
             {
-                this._isValidFigure = false;
+                this.IsValidFigureForCreate = false;
             }
         }
 
-        // TODO: Подумать на сокращением кода.
-        // Код, в которм идёт проверка точек и валидность фигуры.
+        /// <summary>
+        /// The method checks the conditions for the existence of the figure.
+        /// </summary>
+        /// <param name="points">Figure points.</param>
+        /// <returns>If the figure exists - true. If the figure does not exist - false.</returns>
         private bool IsValidFigure(Point[] points)
         {
             bool isValid = true;

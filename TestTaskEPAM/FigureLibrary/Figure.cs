@@ -7,16 +7,19 @@ namespace FigureLibrary
     /// </summary>
     public abstract class Figure
     {
-        protected bool _isValidFigure = true;
+        /// <summary>
+        /// The variable stores information about the existence of the figure.
+        /// </summary>
+        protected bool IsValidFigureForCreate = true;
 
         /// <summary>
-        /// Figure area.
+        /// Figure area. Returns 0, if the figure does not exist.
         /// </summary>
         public double Area
         {
             get
             {
-                if (_isValidFigure)
+                if (IsValidFigureForCreate)
                     return MathFunctionArea();
                 else
                     return 0;
@@ -24,13 +27,13 @@ namespace FigureLibrary
         }
 
         /// <summary>
-        /// Figure perimeter.
+        /// Figure perimeter. Returns 0, if the figure does not exist.
         /// </summary>
         public double Perimeter 
         {
             get
             {
-                if (_isValidFigure)
+                if (IsValidFigureForCreate)
                     return MathFunctionPerimeter();
                 else
                     return 0;

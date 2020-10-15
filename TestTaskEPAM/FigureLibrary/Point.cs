@@ -28,6 +28,9 @@ namespace FigureLibrary
             this.Y = y;
         }
 
+        /// <summary>
+        /// Point class constructor with empty parameters.
+        /// </summary>
         public Point()
         {
             this.X = 0;
