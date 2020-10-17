@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace FigureLibrary
+﻿namespace FigureLibrary
 {
     /// <summary>
     /// Point class with x and y coordinates.

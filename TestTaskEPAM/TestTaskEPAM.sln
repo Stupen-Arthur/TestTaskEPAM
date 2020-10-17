@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplicationFigures",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FigureLibrary", "FigureLibrary\FigureLibrary.csproj", "{3F9BEDA8-B0FF-4FB6-A2C7-55BF8933BF24}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestFigureLibrary", "TestFigureLibrary\TestFigureLibrary.csproj", "{1C51475F-6496-4912-A178-701BF0D2A56A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3F9BEDA8-B0FF-4FB6-A2C7-55BF8933BF24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F9BEDA8-B0FF-4FB6-A2C7-55BF8933BF24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F9BEDA8-B0FF-4FB6-A2C7-55BF8933BF24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C51475F-6496-4912-A178-701BF0D2A56A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C51475F-6496-4912-A178-701BF0D2A56A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C51475F-6496-4912-A178-701BF0D2A56A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C51475F-6496-4912-A178-701BF0D2A56A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
