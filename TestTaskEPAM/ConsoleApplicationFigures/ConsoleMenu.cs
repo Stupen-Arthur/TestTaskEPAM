@@ -14,6 +14,22 @@ namespace ConsoleApplicationFigures
         public int Choice { get; set; }
 
         /// <summary>
+        /// Constructor of the ConsoleMenu class.
+        /// </summary>
+        public ConsoleMenu()
+        {
+            Choice = 0;
+
+            while (Choice == 0)
+            {
+                Console.WriteLine("You must first create at least one figure.");
+                ShowAddFigureMenu();
+                UpdateAddFigureMenu();
+            }
+
+        }
+
+        /// <summary>
         /// Displays the global menu.
         /// </summary>
         public void ShowGlobalMenu()
